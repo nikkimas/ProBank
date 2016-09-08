@@ -1,0 +1,9 @@
+int getGeld()
+{
+
+}
+
+int setGeld()
+{
+
+}

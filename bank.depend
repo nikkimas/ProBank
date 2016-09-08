@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1473352920 source:e:\schue\bank\bank\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tty.h"
+
+1473351576 e:\schue\bank\bank\tty.h
+
+1473353174 source:e:\schue\bank\bank\tty.c
+	<stdio.h>
+	<stdlib.h>
+
+1473353229 source:e:\schue\bank\bank\geld.c
+
