@@ -42,3 +42,10 @@ void createVorrat()
         v_fh[i] = FUENFHUNDERT;
     }
 }
+
+int * Stueckelung(){
+
+    //Globale Var des Gewünschten betrages
+    //Globales Array des Geldlagers
+
+}
