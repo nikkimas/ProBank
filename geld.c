@@ -47,6 +47,5 @@ int * Stueckelung(){
 
     //Globale Var des Gewünschten betrages
     //Globales Array des Geldlagers
-    //Test
 
 }
