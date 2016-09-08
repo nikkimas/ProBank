@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <mysql.h>
-
+//#include <mysql.h>
+/*
 MYSQL *con;
 
 int mysql_connect()
@@ -18,3 +18,4 @@ int mysql_connect()
         return 1;
     }
 }
+*/

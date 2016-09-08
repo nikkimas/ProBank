@@ -23,7 +23,6 @@
 #define null 0
 
 int * card;
-struct user * benutzer;
 int geld;
 
 
@@ -46,7 +45,13 @@ typedef struct {
 typedef struct {
     char name[20];
     char prename[20];
-    struct konto b_konto;
+    konto b_konto;
 }benutzer;
+
+typedef struct {
+    char kartennummer[20];
+    char kontonummer[20];
+    char pin[8];
+}card;
 
 #endif // GLOBAL_VARS_H_INCLUDED
