@@ -53,3 +53,15 @@ void menu(char inp)
     default: printf("Input Missmatch Error\n"); break;
     }
 }
+
+void Clear(void){
+
+    #ifdef linux
+        system("clear");
+    #endif
+
+    #ifdef _WIN32
+        system("cls);
+    #endif
+
+}
