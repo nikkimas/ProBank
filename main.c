@@ -4,7 +4,7 @@
 int main(void)
 {
     char inp;
-    int card;
+    int *card;
     card = emulateCard();
     printWelcome();
     printMenu();
