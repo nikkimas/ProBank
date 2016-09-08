@@ -61,7 +61,7 @@ void Clear(void){
     #endif
 
     #ifdef _WIN32
-        system("cls);
+        system("cls");
     #endif
 
 }

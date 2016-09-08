@@ -11,6 +11,9 @@ int main(void){
 
     for(i=0; i<4; i++){
         ch = getch();
+
+        int in = atoi( ch * );
+
         pin[i] = ch;
         ch = '*';
         printf("%c",ch);
@@ -20,10 +23,7 @@ int main(void){
 
     /*If you want to know what you have entered as password, you can print it*/
     printf("\nYour password is: ");
-
-    for(i=0;i<4;i++){
-        printf("%c",pin[i]);
-    }
+    printf("%s",pin);
 
 }
 
