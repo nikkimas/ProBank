@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include "global_vars.h"
 
 void printCash(int cash)
 {
     printf("\n%i\t\t\t\t\t%i\n", cash, cash);
-    printf("\t\t\ICH BIN GELD%i\t\t\n", cash);
+    printf("\t\t\tICH BIN GELD%i\t\t\n", cash);
     printf("%i\t\t\t\t\t%i\n", cash, cash);
 }
 

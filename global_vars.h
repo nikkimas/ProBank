@@ -1,6 +1,11 @@
 #ifndef GLOBAL_VARS_H_INCLUDED
 #define GLOBAL_VARS_H_INCLUDED
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+
 #define FUENF 5
 #define ZEHN 10
 #define ZWANZIG 20
@@ -11,8 +16,12 @@
 
 #define MAX 10
 
+#define DEBUG 1
+#define null 0
+
 int * card;
 struct user * benutzer;
+int geld;
 
 
 // Geldscheine
