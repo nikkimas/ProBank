@@ -1,11 +1,11 @@
 #include "global_vars.h"
 
-int getGeld()
+int cashOut(int value)
 {
-
+    printCash(value);
 }
 
-int setGeld()
+int cashIn(int value)
 {
 
 }
@@ -41,11 +41,4 @@ void createVorrat()
     {
         v_fh[i] = FUENFHUNDERT;
     }
-}
-
-int * Stueckelung(){
-
-    //Globale Var des Gewünschten betrages
-    //Globales Array des Geldlagers
-
 }

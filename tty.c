@@ -9,14 +9,6 @@ void printPlusRow()
     }
 }
 
-void screenLoop()
-{
-    clear();
-    printPlusRow();
-    printf("\t\t\t\tB I T T E\tG E B E N\tS I E\tI H R E\tK A R T E\tE I N\n");
-    printPlusRow();
-}
-
 void printMinusRow()
 {
     int i;
@@ -26,9 +18,30 @@ void printMinusRow()
     }
 }
 
+void printUeberweisung()
+{
+    printPlusRow();
+    printf("\n\t\t\tU E B E R W E I S U N G\n");
+    printPlusRow();
+    printf("\n\n$ ");
+}
+
 void printSetGeld()
 {
-
+    int inp;
+    printPlusRow();
+    printf("\n\t\t\tG E L D\tE I N Z A H L E N\n");
+    printPlusRow();
+    printf("\n\n$ ");
+    scanf("%d", &inp);
+    if((inp%5) == 0)
+    {
+        cashIn(geld);
+    }
+    else
+    {
+        printf("Automat kann nur Scheine annehmen");
+    }
 }
 
 void printGetGeld()
@@ -49,6 +62,11 @@ void printGetGeld()
         printf("Automat kann keine ungraden Betraege ausgeben\n");
     }
     loop();
+}
+
+void printKontostand()
+{
+
 }
 
 void printWelcome()
@@ -89,7 +107,9 @@ void menu(char inp)
     {
     case '1': printGetGeld(); break;
     case '2': printSetGeld(); break;
-    case '5': exit(EXIT_SUCCESS); break;
+    case '3': printKontostand(); break;
+    case '4': printUeberweisung(); break;
+    case '5': loop(); break;
     #ifdef DEBUG
     case '7': printVorrat(); break;
     #endif // DEBUG
@@ -111,4 +131,14 @@ void printVorrat()
         printf("%d\n", v_f[i]);
     }
     printf("\n");
+}
+
+void clear()
+{
+    #ifdef linux
+        system("clear");
+    #endif // linux
+    #ifdef _WIN32
+        system("cls");
+    #endif // _WIN32
 }

@@ -17,6 +17,9 @@
 #define MAX 10
 
 #define DEBUG 1
+#ifndef _WIN32
+#define _WIN32 1
+#endif // _WIN32
 #define null 0
 
 int * card;
