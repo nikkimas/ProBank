@@ -12,14 +12,25 @@
 
 1473353229 source:e:\schue\bank\bank\geld.c
 
-1473356951 source:d:\programmieren\probank\geld.c
+1473370175 source:d:\programmieren\probank\geld.c
+	"global_vars.h"
 
-1473357181 source:d:\programmieren\probank\main.c
-	<stdio.h>
-	<stdlib.h>
+1473370175 source:d:\programmieren\probank\main.c
+	"global_vars.h"
 
-1473356951 source:d:\programmieren\probank\peripherie.c
-	<stdio.h>
+1473370175 source:d:\programmieren\probank\peripherie.c
+	"global_vars.h"
 
 1473362789 source:d:\programmieren\probank\secure.c
+
+1473370175 source:d:\programmieren\probank\bmysql.c
+	<stdio.h>
+
+1473370175 d:\programmieren\probank\global_vars.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+
+1473370175 source:d:\programmieren\probank\tty.c
+	"global_vars.h"
 

@@ -3,7 +3,7 @@
 int main(void){
 
     char pin[5], ch;
-    int i;
+    int i, asc;
 
     Clear();
 
@@ -11,8 +11,15 @@ int main(void){
 
     for(i=0; i<4; i++){
         ch = getch();
+        asc = ch;
 
-        int in = atoi( ch * );
+        if ( asc <= 47 || asc >= 58 )
+        {
+
+            i--;
+            continue;
+
+        }
 
         pin[i] = ch;
         ch = '*';
@@ -21,7 +28,6 @@ int main(void){
 
     pin[i] = '\0';
 
-    /*If you want to know what you have entered as password, you can print it*/
     printf("\nYour password is: ");
     printf("%s",pin);
 
