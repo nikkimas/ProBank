@@ -1,5 +1,10 @@
 #include "global_vars.h"
 
+int ueberweisung()
+{
+
+}
+
 int cashOut(int value)
 {
     printCash(value);
