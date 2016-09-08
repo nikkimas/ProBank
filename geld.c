@@ -39,7 +39,6 @@ void createVorrat()
     }
     for(i = 0; i < sizeof(v_fh); i++)
     {
-        if(v_fh[i] == null)
-            v_fh[i] = FUENFHUNDERT;
+        v_fh[i] = FUENFHUNDERT;
     }
 }

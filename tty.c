@@ -1,16 +1,5 @@
 #include "global_vars.h"
 
-void loop()
-{
-    char inp;
-    //card = emulateCard();
-    printWelcome();
-    printMenu();
-    inp = scanfTTY();
-    menu(inp);
-    printGoodbye();
-}
-
 void printPlusRow()
 {
     int i;
@@ -18,6 +7,14 @@ void printPlusRow()
     {
         printf("+");
     }
+}
+
+void screenLoop()
+{
+    clear();
+    printPlusRow();
+    printf("\t\t\t\tB I T T E\tG E B E N\tS I E\tI H R E\tK A R T E\tE I N\n");
+    printPlusRow();
 }
 
 void printMinusRow()
@@ -43,12 +40,15 @@ void printGetGeld()
     printf("\nBitte geben Sie den Betrag ein den sie abheben wollen\n$ ");
     scanf("%d", &geld);
     fflush(stdin);
-    if((geld%2) == 0)
+    if((geld%5) == 0)
     {
         cashOut(geld);
     }
-    printf("Automat kann keine ungraden Betraege ausgeben\n");
-    printMenu();
+    else
+    {
+        printf("Automat kann keine ungraden Betraege ausgeben\n");
+    }
+    loop();
 }
 
 void printWelcome()
@@ -107,8 +107,8 @@ void printVorrat()
     int i;
     for(i = 0; i < sizeof(v_f); i++)
     {
-        printf("%d", FUENF);
-        printf("%d", v_f[i]);
+        //printf("%d", FUENF);
+        printf("%d\n", v_f[i]);
     }
     printf("\n");
 }

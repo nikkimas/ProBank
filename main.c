@@ -5,6 +5,17 @@ void prepare()
     createVorrat();
 }
 
+void loop()
+{
+    char *inp;
+    card = emulateCard();
+    printWelcome();
+    printMenu();
+    inp = scanfTTY();
+    menu(inp);
+    printGoodbye();
+}
+
 int main(void)
 {
     #ifdef DEBUG

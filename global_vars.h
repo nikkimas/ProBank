@@ -21,6 +21,7 @@
 
 int * card;
 struct user * benutzer;
+int geld;
 
 
 // Geldscheine
