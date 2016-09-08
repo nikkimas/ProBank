@@ -20,10 +20,28 @@ void printMinusRow()
 
 void printUeberweisung()
 {
+    char empf, blz, ktnr, desc;
+    int geld;
     printPlusRow();
     printf("\n\t\t\tU E B E R W E I S U N G\n");
     printPlusRow();
-    printf("\n\n$ ");
+    printf("\n\n");
+    printf("Empfaenger$ ");
+    scanf("%s", &empf);
+    fflush(stdin);
+    printf("BLZ:");
+    scanf("%s", &blz);
+    fflush(stdin);
+    printf("KontoNummer$ ");
+    scanf("%s", &ktnr);
+    fflush(stdin);
+    printf("Beschreibung$ ");
+    scanf("%s", &desc);
+    fflush(stdin);
+    printf("Betrag$ ");
+    scanf("%d", &geld);
+    fflush(stdin);
+    printf("Warte bitte einen Moment die Daten werden jetzt verifiziert!");
 }
 
 void printSetGeld()
@@ -66,7 +84,9 @@ void printGetGeld()
 
 void printKontostand()
 {
-
+    printPlusRow();
+    printf("");
+    printPlusRow();
 }
 
 void printWelcome()

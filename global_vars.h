@@ -36,5 +36,17 @@ int v_h[MAX];
 int v_zh[MAX];
 int v_fh[MAX];
 
+// Strukturen
+typedef struct {
+    char kontonummer[8];
+    char blz[8];
+    int saldo[100];
+}konto;
+
+typedef struct {
+    char name[20];
+    char prename[20];
+    struct konto b_konto;
+}benutzer;
 
 #endif // GLOBAL_VARS_H_INCLUDED
