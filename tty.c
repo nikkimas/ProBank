@@ -153,7 +153,7 @@ void printVorrat()
     printf("\n");
 }
 
-void clear()
+void Clear()
 {
     #ifdef linux
         system("clear");
@@ -161,4 +161,41 @@ void clear()
     #ifdef _WIN32
         system("cls");
     #endif // _WIN32
+}
+
+int PinInput()
+{
+    char pin[5], ch;
+    int i, asc, intPin;
+
+    Clear();
+
+    printf("PIN bitte eingeben <4 characters>: ");
+
+    for(i=0; i<4; i++){
+        ch = getch();
+        fflush(stdin);
+        asc = ch;
+
+        if ( asc <= 47 || asc >= 58 )
+        {
+            i--;
+            continue;
+        }
+        pin[i] = ch;
+        ch = '*';
+        printf("%c",ch);
+    }
+
+    pin[i] = '\0';
+
+    sscanf(pin, "%d", &intPin);
+
+    #ifdef DEBUG
+        printf("\nYour password is: ");
+        printf("%s",pin);
+    #endif
+
+    return intPin;
+
 }

@@ -3,7 +3,7 @@
 int main(void){
 
     char pin[5], ch;
-    int i, asc;
+    int i, asc, intPin;
 
     Clear();
 
@@ -11,6 +11,7 @@ int main(void){
 
     for(i=0; i<4; i++){
         ch = getch();
+        fflush(stdin);
         asc = ch;
 
         if ( asc <= 47 || asc >= 58 )
@@ -28,8 +29,12 @@ int main(void){
 
     pin[i] = '\0';
 
-    printf("\nYour password is: ");
-    printf("%s",pin);
+    sscanf(pin, "%d", &intPin);
+
+    #ifdef DEBUG
+        printf("\nYour password is: ");
+        printf("%s",pin);
+    #endif
 
 }
 
