@@ -1,6 +1,6 @@
 #include "global_vars.h"
 
-int getGeld()
+int cashOut(int value)
 {
 
 }
@@ -39,6 +39,7 @@ void createVorrat()
     }
     for(i = 0; i < sizeof(v_fh); i++)
     {
-        v_fh[i] = FUENFHUNDERT;
+        if(v_fh[i] == null)
+            v_fh[i] = FUENFHUNDERT;
     }
 }
