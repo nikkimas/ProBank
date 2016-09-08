@@ -1,0 +1,9 @@
+Karte
+Saldo abfragen
+PIN ""
+Geldausgabe inkl Saldocheck
+Stückelung
+Restgeld im Automaten
+Geld einzahlen
+festlegen der möglichen geldscheine
+GUI/User interface
