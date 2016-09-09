@@ -178,6 +178,7 @@ void Clear()
         system("cls");
     #endif // _WIN32
 }
+
 int PinInput()
 {
         char pin[5], ch;
