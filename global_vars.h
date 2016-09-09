@@ -22,10 +22,6 @@
 #endif // _WIN32
 #define null 0
 
-int * card;
-int geld;
-
-
 // Geldscheine
 int v_f[MAX];
 int v_z[MAX];
@@ -34,6 +30,8 @@ int v_ff[MAX];
 int v_h[MAX];
 int v_zh[MAX];
 int v_fh[MAX];
+
+//TODO: Structs Optimieren und die Zugriffsberechtigungen anpassen
 
 // Strukturen
 typedef struct {
@@ -50,8 +48,19 @@ typedef struct {
 
 typedef struct {
     char kartennummer[20];
-    char kontonummer[20];
+    konto konto;
     char pin[8];
-}card;
+}ec_card;
+
+typedef struct {
+    konto sender;
+    konto empfaenger;
+}uweisung;
+
+// Runtime Vars
+int * card;
+int geld;
+ec_card * tmpcard;
+
 
 #endif // GLOBAL_VARS_H_INCLUDED

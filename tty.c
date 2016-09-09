@@ -9,12 +9,26 @@ void printPlusRow()
     }
 }
 
+void printNL()
+{
+    printf("\n");
+}
+
 void printMinusRow()
 {
     int i;
     for(i = 0; i < 70; i++)
     {
         printf("-");
+    }
+}
+
+void printSharpRow(int row)
+{
+    int i;
+    for(i = 0; i < row; i++)
+    {
+        printf("#");
     }
 }
 
@@ -139,7 +153,9 @@ void menu(char inp)
 
 int convertCharToInt(char * value)
 {
-    return atoi(value);
+    int ret;
+    sscanf(value, "%i", &ret);
+    return ret;
 }
 
 void printVorrat()
@@ -155,7 +171,7 @@ void printVorrat()
 
 void clear()
 {
-    #ifdef linux
+    #ifdef UNIX/LINUX
         system("clear");
     #endif // linux
     #ifdef _WIN32

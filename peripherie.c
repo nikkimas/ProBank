@@ -22,3 +22,13 @@ int * emulateCard(void)
     retV[1] = knr;
     return retV;
 }
+
+void beServer()
+{
+
+}
+
+void beClient()
+{
+
+}

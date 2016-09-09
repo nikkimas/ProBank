@@ -31,71 +31,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Exception.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="bmysql.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ea.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="geld.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="global_vars.h" />
-		<Unit filename="include/big_endian.h" />
-		<Unit filename="include/byte_order_generic.h" />
-		<Unit filename="include/byte_order_generic_x86.h" />
-		<Unit filename="include/decimal.h" />
-		<Unit filename="include/errmsg.h" />
-		<Unit filename="include/keycache.h" />
-		<Unit filename="include/little_endian.h" />
-		<Unit filename="include/m_ctype.h" />
-		<Unit filename="include/m_string.h" />
-		<Unit filename="include/my_alloc.h" />
-		<Unit filename="include/my_byteorder.h" />
-		<Unit filename="include/my_compiler.h" />
-		<Unit filename="include/my_config.h" />
-		<Unit filename="include/my_dbug.h" />
-		<Unit filename="include/my_dir.h" />
-		<Unit filename="include/my_getopt.h" />
-		<Unit filename="include/my_global.h" />
-		<Unit filename="include/my_list.h" />
-		<Unit filename="include/my_pthread.h" />
-		<Unit filename="include/my_sys.h" />
-		<Unit filename="include/my_xml.h" />
-		<Unit filename="include/mysql.h" />
-		<Unit filename="include/mysql/client_authentication.h" />
-		<Unit filename="include/mysql/client_plugin.h" />
-		<Unit filename="include/mysql/get_password.h" />
-		<Unit filename="include/mysql/plugin_auth_common.h" />
-		<Unit filename="include/mysql/plugin_trace.h" />
-		<Unit filename="include/mysql/psi/get_password.h" />
-		<Unit filename="include/mysql/psi/mysql_file.h" />
-		<Unit filename="include/mysql/psi/mysql_idle.h" />
-		<Unit filename="include/mysql/psi/mysql_mdl.h" />
-		<Unit filename="include/mysql/psi/mysql_memory.h" />
-		<Unit filename="include/mysql/psi/mysql_ps.h" />
-		<Unit filename="include/mysql/psi/mysql_socket.h" />
-		<Unit filename="include/mysql/psi/mysql_sp.h" />
-		<Unit filename="include/mysql/psi/mysql_stage.h" />
-		<Unit filename="include/mysql/psi/mysql_statement.h" />
-		<Unit filename="include/mysql/psi/mysql_table.h" />
-		<Unit filename="include/mysql/psi/mysql_thread.h" />
-		<Unit filename="include/mysql/psi/mysql_transaction.h" />
-		<Unit filename="include/mysql/psi/psi.h" />
-		<Unit filename="include/mysql/psi/psi_base.h" />
-		<Unit filename="include/mysql/psi/psi_memory.h" />
-		<Unit filename="include/mysql/service_my_snprintf.h" />
-		<Unit filename="include/mysql/service_mysql_alloc.h" />
-		<Unit filename="include/mysql_com.h" />
-		<Unit filename="include/mysql_com_server.h" />
-		<Unit filename="include/mysql_embed.h" />
-		<Unit filename="include/mysql_time.h" />
-		<Unit filename="include/mysql_version.h" />
-		<Unit filename="include/mysqld_ername.h" />
-		<Unit filename="include/mysqld_error.h" />
-		<Unit filename="include/sql_common.h" />
-		<Unit filename="include/sql_state.h" />
-		<Unit filename="include/sslopt-case.h" />
-		<Unit filename="include/sslopt-longopts.h" />
-		<Unit filename="include/sslopt-vars.h" />
-		<Unit filename="include/typelib.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

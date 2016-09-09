@@ -1,5 +1,6 @@
 
-int PinInput(void){
+int PinInput()
+{
 
 
 
