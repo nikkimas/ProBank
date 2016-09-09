@@ -2,3 +2,5 @@
 TestFiles/Dj/Dj.layout
 *.o
 *.exe
+*.exe
+TestFiles/Dj/bin/Debug/Dj.exe

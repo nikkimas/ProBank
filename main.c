@@ -25,6 +25,7 @@ void setUpTmpUser(int * ecc)
 void loop()
 {
     char *inp;
+    Clear();
     card = emulateCard();
     setUpTmpUser(card);
     printWelcome();
