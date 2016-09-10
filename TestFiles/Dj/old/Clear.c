@@ -1,0 +1,12 @@
+
+void Clear(void){
+
+    #ifdef linux
+        system("clear");
+    #endif
+
+    #ifdef _WIN32
+        system("cls");
+    #endif
+
+}
