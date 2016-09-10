@@ -17,9 +17,10 @@
 #define MAX 10
 
 #define DEBUG 1
-#ifndef _WIN32
-#define _WIN32 1
-#endif // _WIN32
+//Comment the following out to Use _WIN32
+//#ifndef _WIN32
+//#define _WIN32 1
+//#endif // _WIN32
 #define null 0
 
 // Geldscheine
@@ -34,25 +35,25 @@ int v_fh[MAX];
 //TODO: Structs Optimieren und die Zugriffsberechtigungen anpassen
 
 // Strukturen
-typedef struct {
-    char kontonummer[8];
-    char blz[8];
-    int saldo[100];
+typedef struct konto {
+    char kontonummer;
+    char blz;
+    int saldo;
 }konto;
 
-typedef struct {
-    char name[20];
-    char prename[20];
+typedef struct benutzer {
+    char name;
+    char prename;
     konto b_konto;
 }benutzer;
 
-typedef struct {
-    char kartennummer[20];
+typedef struct ec_card {
+    char kartennummer;
     konto konto;
-    char pin[8];
+    char pin;
 }ec_card;
 
-typedef struct {
+typedef struct uweisung {
     konto sender;
     konto empfaenger;
 }uweisung;

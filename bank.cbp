@@ -14,7 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add option="`mysql_config --cflags`" />
-					<Add directory="C:/Program Files/MySQL/" />
+					<Add directory="/usr/include/mysql" />
 				</Compiler>
 				<Linker>
 					<Add option="`mysql_config --libs`" />
@@ -49,6 +49,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="global_vars.h" />
+		<Unit filename="gui/welcome.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

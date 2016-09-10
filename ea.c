@@ -11,7 +11,7 @@ char readFile(char path)
         printf("ERROR\t\t FILE NOT FOUND EXCEPTION\n");
         return;
     }
-    while(c=fgets(file))
+    while(c=fgetc(file))
     {
         if(c = 'EOF')
         {

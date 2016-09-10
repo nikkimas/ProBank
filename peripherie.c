@@ -7,11 +7,11 @@ void printCash(int cash)
     printf("%i\t\t\t\t\t%i\n", cash, cash);
 }
 
-int * emulateCard(void)
+char * emulateCard(void)
 {
-    static int retV[2];
-    int cnr;
-    int knr;
+    static char retV[2];
+    char cnr;
+    char knr;
     printf("ElectronicCardNumber: ");
     scanf("%d", &cnr);
     fflush(stdin);
