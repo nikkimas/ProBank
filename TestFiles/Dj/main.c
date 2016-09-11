@@ -10,10 +10,10 @@ void main(void)
     system("pause");
 }
 
-char scanfTTY()
+const char * scanfTTY()
 {
-    char inp;
-    scanf("%s", &inp);
+    const char * inp;
+    scanf("%s", inp);
     fflush(stdin);
     return inp;
 }
