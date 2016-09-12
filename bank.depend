@@ -12,26 +12,27 @@
 
 1473353229 source:e:\schue\bank\bank\geld.c
 
-1473370175 source:d:\programmieren\probank\geld.c
+1473376176 source:d:\programmieren\probank\geld.c
 	"global_vars.h"
 
-1473370175 source:d:\programmieren\probank\main.c
+1473712313 source:d:\programmieren\probank\main.c
 	"global_vars.h"
 
-1473370175 source:d:\programmieren\probank\peripherie.c
+1473712313 source:d:\programmieren\probank\peripherie.c
 	"global_vars.h"
 
-1473362789 source:d:\programmieren\probank\secure.c
+1473712313 source:d:\programmieren\probank\secure.c
 
-1473370175 source:d:\programmieren\probank\bmysql.c
-	<stdio.h>
+1473713406 source:d:\programmieren\probank\bmysql.c
+	"global_vars.h"
+	"mysql_bank.h"
 
-1473376176 d:\programmieren\probank\global_vars.h
+1473712313 d:\programmieren\probank\global_vars.h
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
 
-1473370175 source:d:\programmieren\probank\tty.c
+1473712313 source:d:\programmieren\probank\tty.c
 	"global_vars.h"
 
 1473375335 source:/home/jan/Schule/PRO/proBank/ProBank-daily/geld.c
@@ -130,4 +131,52 @@
 
 1473431180 /home/jan/Schule/PRO/ProBank/mysql_bank.h
 	<mysql.h>
+
+1473443080 source:d:\programmieren\probank\ea.c
+	"global_vars.h"
+
+1473712313 d:\programmieren\probank\mysql_bank.h
+	<mysql.h>
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\mysql.h
+	<sys/types.h>
+	<windows.h>
+	<winsock2.h>
+	"mysql_version.h"
+	"mysql_com.h"
+	"mysql_time.h"
+	"my_list.h"
+	"mysql/client_plugin.h"
+	"typelib.h"
+	"my_alloc.h"
+
+1424903192 c:\program files\mysql\mysql connector c 6.1\include\mysql_version.h
+	<custom_conf.h>
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\mysql_com.h
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\mysql_time.h
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\my_list.h
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\mysql\client_plugin.h
+	<stdarg.h>
+	<stdlib.h>
+	<mysql/plugin_auth_common.h>
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\mysql\plugin_auth_common.h
+	<windows.h>
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\typelib.h
+	"my_alloc.h"
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\my_alloc.h
+	<mysql/psi/psi_memory.h>
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\mysql\psi\psi_memory.h
+	"psi_base.h"
+
+1424898590 c:\program files\mysql\mysql connector c 6.1\include\mysql\psi\psi_base.h
+
+1473712313 source:d:\programmieren\probank\exception.c
 

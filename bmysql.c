@@ -1,5 +1,6 @@
 #include "global_vars.h"
 #include "mysql_bank.h"
+#include "my_global.h"
 
 char select_mysql(char value)
 {
@@ -20,14 +21,14 @@ char select_mysql(char value)
         for(i = 0; i < mysql_num_fields(result); i++)
         {
             *retV += row[i];
-            retV += "\\";
+            //retV += "\\";
         }
     }
 }
 
 void insert_mysql(char value)
 {
-    mysql_query(my, values);
+    mysql_query(my, value);
 }
 
 int connect_mysql()
