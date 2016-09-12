@@ -2,8 +2,10 @@
 #define MYSQL_BANK_H_INCLUDED
 
 #include <mysql.h>
+#include <my_global.h>
+
 #define HOST "127.0.0.1"
-#define PORT 3306
+#define PORT "3306"
 #define USERNAME "probank"
 #define PASSWORT "mettwurst"
 #define DBNAME "probank"

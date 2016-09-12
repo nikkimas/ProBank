@@ -5,6 +5,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+#ifdef _WIN32
+    #include <windows.h>
+#endif // _WIN32
 
 #define FUENF 5
 #define ZEHN 10
@@ -18,9 +21,6 @@
 
 #define DEBUG 1
 //Comment the following out to Use _WIN32
-//#ifndef _WIN32
-//#define _WIN32 1
-//#endif // _WIN32
 #define null 0
 
 // Geldscheine

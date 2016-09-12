@@ -20,14 +20,13 @@ char select_mysql(char value)
         for(i = 0; i < mysql_num_fields(result); i++)
         {
             *retV += row[i];
-            retV += "\\";
         }
     }
 }
 
 void insert_mysql(char value)
 {
-    mysql_query(my, values);
+    mysql_query(my, value);
 }
 
 int connect_mysql()
