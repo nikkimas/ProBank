@@ -169,13 +169,23 @@ void printVorrat()
     printf("\n");
 }
 
-void Clear()
+void Clear(void)
 {
     #ifdef UNIX/LINUX
         system("clear");
     #endif // linux
     #ifdef _WIN32
         system("cls");
+    #endif // _WIN32
+}
+
+void TTYSetSize(void)
+{
+    #ifdef UNIX/LINUX
+        system("clear");
+    #endif // linux
+    #ifdef _WIN32
+        system("mode 140,50");
     #endif // _WIN32
 }
 
