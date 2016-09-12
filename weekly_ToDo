@@ -6,7 +6,7 @@
   -- encodePackage()
   -- decodePackage()
   -- sendPackage()
-  -- recivePackage()
+  -- receivePackage()
   -- linux_client()
   -- linux_server()
   -- ms_client()
