@@ -27,7 +27,6 @@ void loop()
 {
     char *inp;
     Clear();
-    system("pause");
     TTYSetSize();
     card = emulateCard();
     setUpTmpUser(card);
