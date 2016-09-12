@@ -1,0 +1,14 @@
+-- Module
+  -- geldAbheben()
+  -- geldEinzahlen()
+  -- connectMySQL()
+  -- mysqlSubRoutinen()
+  -- encodePackage()
+  -- decodePackage()
+  -- sendPackage()
+  -- recivePackage()
+  -- linux_client()
+  -- linux_server()
+  -- ms_client()
+  
+  Die einzelnen Module bitte Sinnvoll schachteln und so aufbauen das jedes Modul einzeln getestet werden kann.
