@@ -1,7 +1,7 @@
-#include "global_vars.h"
+#include <stdio.h>
 
-int PinInput(void)
-{
+int PinInput(void){
+
     char pin[5], ch;
     int i, asc, intPin;
 
@@ -41,5 +41,6 @@ int PinInput(void)
         printf("%s",pin);
     #endif
 
-    return intPin; // Pin an aufrufende funktion zurückgeben
+    return intPin; // Pin an ursprungsfunktion zurückgeben
+
 }

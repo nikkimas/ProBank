@@ -14,17 +14,20 @@ void prepare()
     #endif
 }
 
-void setUpTmpUser(int * ecc)
+void setUpTmpUser(char * ecc)
 {
-    tmpcard->kartennummer = ecc[0];
-    tmpcard->konto = ecc[1];
-    tmpcard->pin = 4444;
-
+    char t_knr = ecc[0];
+    char t_knt = ecc[1];
+//    tmpcard->kartennummer = t_knr;    HALLLOOO! ICH BIN KAPUTT!!!!
+//    tmpcard->konto = t_knt;
+//    tmpcard->pin = 4444;              HALLLOOO! ICH BIN KAPUTT!!!!
 }
 
 void loop()
 {
     char *inp;
+    Clear();
+    TTYSetSize();
     card = emulateCard();
     setUpTmpUser(card);
     printWelcome();

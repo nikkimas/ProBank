@@ -1,51 +1,19 @@
 #include <stdio.h>
 
-int main(void){
 
-    char pin[5], ch;
-    int i, asc, intPin;
+void main(void)
+{
+    int test;
 
-    Clear();
-
-    printf("Enter the PIN <4 characters>: ");
-
-    for(i=0; i<4; i++){
-        ch = getch();
-        fflush(stdin);
-        asc = ch;
-
-        if ( asc <= 47 || asc >= 58 )
-        {
-
-            i--;
-            continue;
-
-        }
-
-        pin[i] = ch;
-        ch = '*';
-        printf("%c",ch);
-    }
-
-    pin[i] = '\0';
-
-    sscanf(pin, "%d", &intPin);
-
-    #ifdef DEBUG
-        printf("\nYour password is: ");
-        printf("%s",pin);
-    #endif
-
+    test = scanfTTY();
+    printf("%i", test);
+    system("pause");
 }
 
-void Clear(void){
-
-    #ifdef linux
-        system("clear");
-    #endif
-
-    #ifdef _WIN32
-        system("cls");
-    #endif
-
+const char * scanfTTY()
+{
+    const char * inp;
+    scanf("%s", inp);
+    fflush(stdin);
+    return inp;
 }

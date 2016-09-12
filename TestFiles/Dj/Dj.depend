@@ -1,4 +1,12 @@
 # depslib dependency file v1.0
-1473376928 source:d:\programmieren\probank\testfiles\dj\main.c
+1473466721 source:d:\programmieren\probank\testfiles\dj\main.c
+	<stdio.h>
+
+1473438826 source:c:\users\david\documents\programmieren\probank\testfiles\dj\main.c
+	<stdio.h>
+
+1473466681 source:d:\programmieren\probank\testfiles\dj\old\clear.c
+
+1473466747 source:d:\programmieren\probank\testfiles\dj\old\pininput.c
 	<stdio.h>
 
