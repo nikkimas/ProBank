@@ -14,10 +14,12 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add option="`mysql_config --cflags`" />
+					<Add directory="C:/Program Files/MySQL/MySQL Connector C 6.1/include" />
 					<Add directory="/usr/include/mysql" />
 				</Compiler>
 				<Linker>
 					<Add option="`mysql_config --libs`" />
+					<Add directory="C:/Program Files/MySQL/MySQL Connector C 6.1/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
