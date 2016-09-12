@@ -1,6 +1,6 @@
 #include "global_vars.h"
 
-int auszahlen()
+const char * auszahlen(int kontostand, int scheine, int input)
 {
     int kontostand=2000 ;
     int input=0;
@@ -23,7 +23,7 @@ int auszahlen()
         else
         {
             if(input>kontostand)
-                printf("Sie haben nicht genug Guthaben! Geben sie einen geringeren Betrag ein.\n");
+                return "EXIT FAILURE"
             else
             CorrEingabe=1;
         }
@@ -63,7 +63,7 @@ int auszahlen()
     printf("Sie erhalten:\n%d 500 Euro Schein(e)\n%d 200 Euro Schein(e)\n%d 100 Euro Schein(e)\n%d 50  Euro Schein(e)\n%d 20  Euro Schein(e)\n%d 10  Euro Schein(e) \n%d 5   Euro Schein(e).\n\n", scheine[6], scheine[5], scheine[4], scheine[3], scheine[2], scheine[1], scheine[0]);
     printf("Sie werden nun wieder zur Auswahl weitergeleitet!\n");
     Sleep(2500);
-    //Zurück zu der Auswahl - auswahl(NULL);
+    //ZurÃ¼ck zu der Auswahl - auswahl(NULL);
     return 0;
 
 }
