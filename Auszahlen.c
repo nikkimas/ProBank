@@ -8,25 +8,21 @@ const char * auszahlen(int kontostand, int input, int rechner, int scheine/*arra
    	printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~GELD AUSZAHLEN~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
    #endif
    
-   while(CorrEingabe!=1)
-    {
-        #ifdef DEBUG
-		printf("Wie viel Geld wollen sie abheben?\n");
+   #ifdef DEBUG
+	printf("Wie viel Geld wollen sie abheben?\n");
+   #endif
+   
+   rechner=input % 5;
+   if(rechner>0 || input>5000)
+	#ifdef DEBUG
+		printf("Fehler! Versuchen sie es erneut.\n");
 	#endif
-		
-        rechner=input % 5;
-        if(rechner>0 || input>5000)
-			#ifdef DEBUG
-				printf("Fehler! Versuchen sie es erneut.\n");
-			#endif
-		else
-        {
-            if(input>kontostand)
-                return "EXIT FAILURE"
-            else
-            CorrEingabe=1;
-        }
-    }
+   else
+   {
+   	if(input>kontostand)
+        return "EXIT FAILURE"
+   }
+
 
     kontostand-=input;
 
