@@ -20,7 +20,7 @@ const char * auszahlen(int kontostand, int input, int rechner, int scheine/*arra
    else
    {
    	if(input>kontostand)
-        return "EXIT FAILURE"
+        return "EXIT FAILURE";
    }
 
 
