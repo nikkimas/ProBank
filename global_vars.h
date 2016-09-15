@@ -62,5 +62,20 @@ int * card;
 int geld;
 ec_card * tmpcard;
 
+//Einzahlen Vars
+typedef struct{
+    int betrag;
+    int kontostand=0;
+}einzahlung;
+
+
+//Auszahlen Vars
+typedef struct{
+    int kontostand=0;
+    int input;
+    int rechner;
+    int scheine[7];
+    int CorrEingabe;
+}auszahlen;
 
 #endif // GLOBAL_VARS_H_INCLUDED
