@@ -58,10 +58,11 @@
 1473427598 source:c:\users\david\documents\programmieren\probank\geld.c
 	"global_vars.h"
 
-1473427598 c:\users\david\documents\programmieren\probank\global_vars.h
+1474009087 c:\users\david\documents\programmieren\probank\global_vars.h
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
+	<windows.h>
 
 1473427599 source:c:\users\david\documents\programmieren\probank\peripherie.c
 	"global_vars.h"
@@ -74,4 +75,7 @@
 	"global_vars.h"
 
 1473441476 source:d:\programmieren\probank\exception.c
+
+1473637187 source:c:\users\david\documents\programmieren\probank\ea.c
+	"global_vars.h"
 

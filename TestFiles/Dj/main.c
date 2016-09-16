@@ -1,75 +1,64 @@
 #include <stdio.h>
 
+typedef struct package
+{
+    int kontoNr;
+    char benutzerName;
+    int pin;
+}package;
+package pack1;
+
+typedef struct charReturn
+{
+    char returnVal;
+}charReturn;
+
 
 void main(void)
 {
-    int test;
+    pack1.kontoNr = KontoNrInput();
+    /*pack1.benutzerName = UserNameInput();*/
 
-    test = scanfTTY();
-    printf("%i", test);
-    system("pause");
+    char *returned_str = createStr();
 }
 
-const char * scanfTTY()
+int KontoNrInput(void)
 {
-    const char * inp;
-    scanf("%s", inp);
-    fflush(stdin);
-    return inp;
+    int ktNr;
+
+    Clear();
+    printf("Bitte geben Sie ihre Konto Nummer ein: ");
+    scanf("%i", &ktNr);
+
+    return ktNr;
 }
 
-void Clear(void){
-
-    #ifdef linux
-        system("clear");
-    #endif
-
-    #ifdef _WIN32
-        system("cls");
-    #endif
-
-}
-
-int pinInput(void)
+char * UserNameInput(void)
 {
-    char pin[5], ch;
-    int i, asc, intPin;
+    char userName[10];
 
-    Clear();  //Terminal wird gesäubert
+    Clear();
+    char *userNameRet = (char *) malloc(sizeof(char) * 3);
+    printf("Bitte geben Sie ihren Benutzernamen ein: ");
+    scanf("%s", &userNameRet);
 
-    printf("ESC zum Abbrechen\n");
-    printf("PIN bitte eingeben <4 characters>: ");
 
-    for(i=0; i<4; i++){ //Eingabe von 4 Ziffern
-		ch = getch(); //EIngabe wird in "ch" gespeichert
-        fflush(stdin);  //Tastenpuffer leeren
-        asc = ch;   //Ascii nummer von "ch" wird in "asc" gespeichert
 
-        if ( asc == 27 )  //Prüfen, ob ESC gedrückt wird
-        {
-            //KartenAuswurf funktion
-            return -1;
-        }
+    return userNameRet;
 
-        if ( asc <= 47 || asc >= 58 )//Prüfen, ob es ein buchstabe ist
-        {
-            i--; //laufvar um 1 decimieren
-            continue; //an anfang von der "for" schleife springen
-        }
+}
 
-        pin[i] = ch; //ch in das array für den PIN schreiben
-        ch = '*';   // "*" statt der eingabe in "ch" schreiben
-        printf("%c",ch);    //"ch" ausgeben
-    }
 
-    pin[i] = '\0';//Nullterminierung dranhängen
+char * createStr() {
 
-    sscanf(pin, "%d", &intPin); //"pin[]" in "intPin" schieben
+    char char1= 'm';
+    char char2= 'y';
 
-    #ifdef DEBUG
-        printf("\nYour password is: ");
-        printf("%s",pin);
-    #endif
+    char *str = (char *) malloc(sizeof(char) * 3);
+    str[0] = char1;
+    str[1] = char2;
+    str[2] = '\0';
 
-    return intPin; // Pin an aufrufende funktion zurückgeben
+    return str;
+
 }
