@@ -1,7 +1,7 @@
 #ifndef MYSQL_BANK_H_INCLUDED
 #define MYSQL_BANK_H_INCLUDED
 
-#include <mysql.h>
+#include <C:\Program Files\MySQL\MySQL Connector C 6.1\include\mysql.h>
 #include <my_global.h>
 
 #define HOST "127.0.0.1"
