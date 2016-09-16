@@ -1,5 +1,4 @@
 #include "global_vars.h"
-
 void prepare()
 {
     createVorrat();
@@ -18,16 +17,14 @@ void setUpTmpUser(char * ecc)
 {
     char t_knr = ecc[0];
     char t_knt = ecc[1];
-//    tmpcard->kartennummer = t_knr;    HALLLOOO! ICH BIN KAPUTT!!!!
+    tmpcard->kartennummer = t_knr;
 //    tmpcard->konto = t_knt;
-//    tmpcard->pin = 4444;              HALLLOOO! ICH BIN KAPUTT!!!!
+    tmpcard->pin = 4444;
 }
 
 void loop()
 {
     char *inp;
-    Clear();
-    TTYSetSize();
     card = emulateCard();
     setUpTmpUser(card);
     printWelcome();
