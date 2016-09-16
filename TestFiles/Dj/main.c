@@ -1,8 +1,25 @@
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{
 
-     char pin[5], ch;
+}
+
+void Clear(void){
+
+    #ifdef linux
+        system("clear");
+    #endif
+
+    #ifdef _WIN32
+        system("cls");
+    #endif
+
+}
+
+int pinInput(void)
+{
+    char pin[5], ch;
     int i, asc, intPin;
 
     Clear();  //Terminal wird gesäubert
@@ -43,15 +60,4 @@ int main(void){
 
     return intPin; // Pin an aufrufende funktion zurückgeben
 }
-
-void Clear(void){
-
-    #ifdef linux
-        system("clear");
-    #endif
-
-    #ifdef _WIN32
-        system("cls");
-    #endif
-
 }
