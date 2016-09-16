@@ -1,8 +1,21 @@
 #include <stdio.h>
 
-int main(void)
-{
 
+void main(void)
+{
+    int test;
+
+    test = scanfTTY();
+    printf("%i", test);
+    system("pause");
+}
+
+const char * scanfTTY()
+{
+    const char * inp;
+    scanf("%s", inp);
+    fflush(stdin);
+    return inp;
 }
 
 void Clear(void){
@@ -59,5 +72,4 @@ int pinInput(void)
     #endif
 
     return intPin; // Pin an aufrufende funktion zurückgeben
-}
 }
