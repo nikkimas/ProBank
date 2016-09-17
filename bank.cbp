@@ -51,9 +51,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="global_vars.h" />
-		<Unit filename="gui/welcome.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Unit filename="libmysql.dll" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

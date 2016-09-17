@@ -26,10 +26,11 @@
 
 1473441476 source:d:\programmieren\probank\bmysql.c
 
-1473441476 d:\programmieren\probank\global_vars.h
+1474143911 d:\programmieren\probank\global_vars.h
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
+	<windows.h>
 
 1473675955 source:d:\programmieren\probank\tty.c
 	"global_vars.h"
